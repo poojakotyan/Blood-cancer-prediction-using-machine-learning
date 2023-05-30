@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INFORMATION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;
+background-color: rgb(237, 204, 174);}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+.fa a{
+    text-decoration: none;
+    color: #000000;
+    margin: 0px 320px;
+    text-align: center;
+    
+    
+
+}
+.fa a:active{
+    text-decoration: none;
+}
+.fa a:visited{
+    text-decoration: none;
+}
+.fa a:hover{
+    text-decoration: none;
+}
+span{
+        background:#fb445c ;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.9s;
+    }
+    button{
+        width:200px;
+        padding: 15px 0;
+        text-align: center;
+    
+        
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #f8f8f8;
+        background: transparent;
+        text-decoration-color:white;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    button:hover{
+        border: none;
+    }
+    .w3-content a{
+      text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="fa" style="font-size: 40px;">
+        <a href="home">&#xf0a8;</a>
+    </div> -->
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="info1">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="{{ url_for('static', filename='images/bcp_image2.jpg') }}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">BLOOD CANCER</h1><br>
+      <h5 class="w3-center">LEUKEMIA</h5>
+      <p class="w3-large">Blood cancer affects how your body produces blood cells and how well those cells work. Most blood cancers start in your bone marrow, the soft, sponge-like material in the center of your bones. Your bone marrow makes stem cells that mature and become red blood cells, white blood cells and platelets.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Researchers know blood cancer happens when blood cell DNA changes or mutates, but they aren’t sure why this happens. Your DNA tells cells what to do. In blood cancer, DNA tells blood cells when to grow, when to divide or multiply and/or when to die.
+
+        When DNA gives your cells new instructions, your body develops abnormal blood cells that grow and multiply faster than normal and sometimes live longer than normal. When that happens, normal blood cells become lost in an ever-growing horde of abnormal cells that crowd your normal cells and monopolize space in your bone marrow.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- info2 Section -->
+  <div class="w3-row w3-padding-64" id="info2">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">BLOOD CANCER SYMPTOMS</h1><br>
+      <h4>Fatigue</h4>
+      <p class="w3-text-grey">This is feeling so tired you can’t manage your daily activities. You may also feel weak.</p><br>
+    
+    
+      <h4>Persistent fever</h4>
+      <p class="w3-text-grey">A fever is a sign your body is fighting infection or responding to abnormal cancer cells.</p><br>
+    
+      <h4>Drenching night sweatss</h4>
+      <p class="w3-text-grey">This is sweating that comes on suddenly while you’re sleeping, disturbing your sleep and drenching your bedding and clothes.</p><br>
+    
+      <h4>Unusual bleeding or bruising</h4>
+      <p class="w3-text-grey">Everyone has bumps, bruises and injuries that make us bleed. Unusual bleeding or bruising is bleeding that doesn’t stop and bruises that don’t heal after two weeks.</p><br>    
+
+      <h4>Unexpected or unexplained weight loss</h4>
+      <p class="w3-text-grey"> Unexpected weight loss of 10 pounds over a six- to 12-month period is considered unexplained weight loss.</p><br>
+
+      <h4>Frequent infections</h4>
+      <p class="w3-text-grey">Frequent infections may be a sign something is affecting your immune system.</p> <br>
+
+      <h4>Bone pain</h4>
+      <p class="w3-text-grey">Myeloma and leukemia may cause bone pain or tender spots on your bones.</p> <br>
+
+  
+
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="{{ url_for('static', filename='images/bcp_image.jpg') }}" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  
+
+  
+  <center><button type="button"><span></span><a href="{{ url_for('home') }}">BLOOD CANCER</a></button></center>
+<!-- End page content -->
+</div>
+
+
+
+</body>
+</html>

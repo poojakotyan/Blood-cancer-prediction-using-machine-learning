@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Cancer</title>
+    <style>
+    .background{
+          
+        
+        height: 100vh;
+        width: 100%;
+        background-image: url('/static/images/bcp_image3.jpg');
+        background-size: cover;
+        background-position: center;
+        
+
+    }
+    
+    span{
+        background:#fb445c ;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.9s;
+    }
+    button{
+        width:200px;
+        padding: 15px 0;
+        text-align: center;
+    
+        
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #f8f8f8;
+        background: transparent;
+        text-decoration-color:white;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    button:hover{
+        border: none;
+    }
+    .navbar a{
+      text-decoration: none;
+      color:white ;
+    }
+
+
+    h1{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 70px;
+        color: rgb(235, 230, 223);
+    }
+    h2{
+        font-family: Helvetica, Arial, sans-serif;  
+        color: rgb(198, 216, 221);
+    }
+   
+</style>
+</head>
+<body class="background" >
+
+    <br>
+    <h1><center>BLOOD CANCER PREDICTION</center></h1>
+    <h2><p><center> Know your disease</center></p></h2>
+    <h2><p><center> Save your life.</center></p></h2>
+
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    
+     <div class="navbar">
+       
+       
+       <center><button type="button"><span></span><a href="{{ url_for('info') }}">INFORMATION</a></button></center>
+       <center><button type="button"><span></span><a href="{{ url_for('home') }}">PREDICTION</a></button></center>
+     </div>
+        
+     
+           
+
+    
+</body>
+</html>
